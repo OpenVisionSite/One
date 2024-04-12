@@ -1,4 +1,4 @@
-import * as THREE from '.../node_modules/three/build/three.module.js';
+import * as THREE from 'https://github.com/OpenVisionSite/One/blob/121d098c51929b9b1d1194185ef8354f798f3d0b/node_modules/three/build/three.module.js';
 
 class Visualization {
     constructor() {
