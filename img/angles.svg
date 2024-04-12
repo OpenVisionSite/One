@@ -1,0 +1,20 @@
+<svg width="1203" height="873" viewBox="0 0 1203 873" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.7">
+<mask id="path-1-inside-1_724_1264" fill="white">
+<path d="M0 0H30V30H0V0Z"/>
+</mask>
+<path d="M0 0V-2H-2V0H0ZM0 2H30V-2H0V2ZM2 30V0H-2V30H2Z" fill="white" mask="url(#path-1-inside-1_724_1264)"/>
+<mask id="path-3-inside-2_724_1264" fill="white">
+<path d="M0 873L-1.31134e-06 843L30 843L30 873L0 873Z"/>
+</mask>
+<path d="M0 873L-2 873L-2 875L8.74228e-08 875L0 873ZM2 873L2 843L-2 843L-2 873L2 873ZM30 871L-8.74228e-08 871L8.74228e-08 875L30 875L30 871Z" fill="white" mask="url(#path-3-inside-2_724_1264)"/>
+<mask id="path-5-inside-3_724_1264" fill="white">
+<path d="M1203 0H1173V30H1203V0Z"/>
+</mask>
+<path d="M1203 0V-2H1205V0H1203ZM1203 2H1173V-2H1203V2ZM1201 30V0H1205V30H1201Z" fill="white" mask="url(#path-5-inside-3_724_1264)"/>
+<mask id="path-7-inside-4_724_1264" fill="white">
+<path d="M1203 873L1203 843L1173 843L1173 873L1203 873Z"/>
+</mask>
+<path d="M1203 873L1205 873L1205 875L1203 875L1203 873ZM1201 873L1201 843L1205 843L1205 873L1201 873ZM1173 871L1203 871L1203 875L1173 875L1173 871Z" fill="white" mask="url(#path-7-inside-4_724_1264)"/>
+</g>
+</svg>

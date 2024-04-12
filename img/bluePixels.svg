@@ -1,0 +1,30 @@
+<svg width="238" height="15" viewBox="0 0 238 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.9">
+<rect opacity="0.7" x="180" width="8" height="6" fill="white"/>
+<rect opacity="0.7" x="180" y="9" width="8" height="6" fill="white"/>
+<rect opacity="0.7" x="190" width="8" height="6" fill="white"/>
+<rect opacity="0.7" x="190" y="9" width="8" height="6" fill="white"/>
+<rect opacity="0.4" x="200" width="8" height="6" fill="white"/>
+<rect opacity="0.4" x="200" y="9" width="8" height="6" fill="white"/>
+<rect opacity="0.4" x="210" width="8" height="6" fill="white"/>
+<rect opacity="0.4" x="210" y="9" width="8" height="6" fill="white"/>
+<rect opacity="0.2" x="220" width="8" height="6" fill="white"/>
+<rect opacity="0.2" x="220" y="9" width="8" height="6" fill="white"/>
+<rect opacity="0.2" x="230" width="8" height="6" fill="white"/>
+<rect opacity="0.2" x="230" y="9" width="8" height="6" fill="white"/>
+</g>
+<g opacity="0.9">
+<rect opacity="0.7" width="8" height="6" transform="matrix(-1 0 0 1 58 0)" fill="white"/>
+<rect opacity="0.7" width="8" height="6" transform="matrix(-1 0 0 1 58 9)" fill="white"/>
+<rect opacity="0.7" width="8" height="6" transform="matrix(-1 0 0 1 48 0)" fill="white"/>
+<rect opacity="0.7" width="8" height="6" transform="matrix(-1 0 0 1 48 9)" fill="white"/>
+<rect opacity="0.4" width="8" height="6" transform="matrix(-1 0 0 1 38 0)" fill="white"/>
+<rect opacity="0.4" width="8" height="6" transform="matrix(-1 0 0 1 38 9)" fill="white"/>
+<rect opacity="0.4" width="8" height="6" transform="matrix(-1 0 0 1 28 0)" fill="white"/>
+<rect opacity="0.4" width="8" height="6" transform="matrix(-1 0 0 1 28 9)" fill="white"/>
+<rect opacity="0.2" width="8" height="6" transform="matrix(-1 0 0 1 18 0)" fill="white"/>
+<rect opacity="0.2" width="8" height="6" transform="matrix(-1 0 0 1 18 9)" fill="white"/>
+<rect opacity="0.2" width="8" height="6" transform="matrix(-1 0 0 1 8 0)" fill="white"/>
+<rect opacity="0.2" width="8" height="6" transform="matrix(-1 0 0 1 8 9)" fill="white"/>
+</g>
+</svg>
