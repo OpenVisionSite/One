@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    color: #fff;
+    list-style-type: none;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+:root {
+    font-size: 16px; /* Базовый размер шрифта для десктопных версий */
+}
+html {
+    scroll-behavior: smooth;
+}  
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 38px;
+}
+h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+}
+
+.h-gi-c {
+    background-color: rgba(0, 203, 8, 1);
+}
+.dt-gi-c {
+    background-color: rgb(203, 0, 0);
+}
+.s-gi-c {
+    background-color: rgb(0, 153, 255);
+}
+.a-gi-c {
+    background-color: rgb(255, 217, 50);
+}
+.f-gi-c {
+    background-color: rgb(247, 0, 255);
+}
+.h-c {
+    background-color: rgba(0, 203, 8, 0.1);
+}
+.dt-c {
+    background-color: rgba(203, 0, 0, 0.1);
+}
+.s-c {
+    background-color: rgb(0, 153, 255, 0.1);
+}
+.a-c {
+    background-color: rgb(255, 217, 50, 0.1);
+}
+.f-c {
+    background-color: rgb(247, 0, 255, 0.1);
+}
+
+.cnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    padding: 18px;
+    box-sizing: border-box;
+}
+.box-item {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    width: 100%;
+    height: 100%;
+}
+.cnt-background {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+.div-top-corners::before,
+.div-top-corners::after,
+.div-bottom-corners::before,
+.div-bottom-corners::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 30px;
+    height: 30px;
+}
+.div-top-corners::before {
+    top: 0;
+    left: 0;
+    border-width: 2px 0 0 2px;
+    border-color: rgba(255, 255, 255, 0.7) transparent transparent rgba(255, 255, 255, 0.7);
+}
+.div-top-corners::after {
+    top: 0;
+    right: 0;
+    border-width: 2px 2px 0 0;
+    border-color: rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7) transparent transparent;
+}
+.div-bottom-corners::before {
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 2px 2px;
+    border-color: transparent transparent rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7);
+}
+.div-bottom-corners::after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 2px 2px 0;
+    border-color: transparent rgba(255, 255, 255, 0.7) rgba(255, 255, 255, 0.7) transparent;
+}
+.text-background {
+    position: absolute;
+    width: 80%;
+    line-height: 4.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3rem;
+    z-index: 1000;
+    overflow-wrap: break-word;
+}
+.grid-container {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+}
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+}
+.options-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    gap: 18px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 60px;
+    gap: 18px;
+}
+.title-nav {
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(45px);
+}
+.title-nav::-webkit-scrollbar {
+    display: block;
+    height: 6px;
+    background-color: rgb(32, 32, 32);
+}
+
+.title-nav::-webkit-scrollbar-thumb {
+    background-color: rgb(63, 63, 63);
+}
+
+.title-nav::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.nav-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    margin-left: 40px;
+    height: 100%;
+    gap: 25px;
+    white-space: nowrap;
+}
+.text-item {
+    font-size: 1rem;
+    text-overflow: ellipsis;
+}
+.text-line {
+    min-width: 20px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.home-nav {
+    min-width: 60px;
+    height: 100%;
+    backdrop-filter: blur(45px);
+}
+
+.dropdown {
+    min-width: 24%;
+    position: relative;
+    display: inline-block;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    min-width: 100%;
+    margin-top: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(25px);
+    z-index: 1;
+}
+.dropdown-content a{
+    padding: 10px;
+}
+.lng-nav {
+    height: 100%;
+    backdrop-filter: blur(45px);
+    font-size: 0.8rem;
+    color: #fff;
+}
+.text-cnt {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 10px 40px;
+    overflow: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.text-cnt::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    background-color: rgb(32, 32, 32);
+}
+
+.text-cnt::-webkit-scrollbar-thumb {
+    background-color: rgb(63, 63, 63);
+}
+
+.text-cnt::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+.text-scroll {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+}
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 10vh;
+}
+.title h1 {
+    font-size: 3rem;
+}
+.title-block {
+    height: 40%;
+}
+.block {
+    min-width: 2px;
+    min-height: 100%;
+    margin-right: 30px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.text p {
+    font-size: 1rem;
+}
+.text {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+.text-block {
+    min-height: 100%;
+}
+.text-block .block {
+    min-width: 2px;
+    min-height: 100%;
+    margin-right: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.conclusion {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.conclusion-block {
+    min-height: 100%;
+}
+.conclusion-block .block {
+    min-width: 2px;
+    min-height: 100%;
+    margin-right: 30px;
+    background-color: rgb(255, 153, 0);
+}
+.line {
+    width: 100%;
+    height: 2px;
+    margin: 40px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+@media (max-width: 1280px) {
+    :root {
+        font-size: 15px; /* Меньший размер шрифта для экранов до 1200px */
+    }
+}
+
+@media (max-width: 1024px) {
+    * {
+        line-height: 22px;
+    }
+    :root {
+        font-size: 14px; /* Ещё меньший размер шрифта для экранов до 992px */
+    }
+    .box-item {
+        flex-direction: column;
+    }
+    .options-box {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 80%;
+    }
+    .cnt-background {
+        width: 100%;
+        height: 20%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .title {
+        height: 16vh;
+        width: 80%;
+    }
+    .title h1{
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+    .dropdown {
+        display: inline-block;
+    }
+    .dropdown-content {
+        margin-top: -160px;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 13px; /* Минимальный размер шрифта для мобильных устройств */
+    }
+    .text-cnt {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 12px; /* Минимальный размер шрифта для мобильных устройств */
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

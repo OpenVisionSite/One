@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/ico.png" type="image/x-icon">
+    <title>OpenVision</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>      
+    <div class="scroll-container"></div>
+    <div class="side-bar-cnt">
+        <div class="side-bar cnt">
+            <button class="navigate-block" id="block-1" data-target="section-hold"></button>
+            <div class="navigate-line"></div>
+            <button class="navigate-block" id="block-2" data-target="section-dayTrading"></button>
+            <div class="navigate-line"></div>
+            <button class="navigate-block" id="block-3" data-target="section-staking"></button>
+            <div class="navigate-line"></div>
+            <button class="navigate-block" id="block-4" data-target="section-arbitrage"></button>
+            <div class="navigate-line"></div>
+            <button class="navigate-block" id="block-5" data-target="section-futures"></button>
+        </div>
+    </div>
+    
+    <div class="svg-cont">
+        <svg class="svg-background" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.6">
+                <path d="M50 0L50.0001 1080M190 0L190 1080M330 0L330 1080M470 0L470 1080M610 0V1080M750 0V1080M890 0V1080M1030 0L1030 1080M1170 0L1170 1080M1310 0L1310 1080M1450 0L1450 1080M1590 0L1590 1080M1730 0L1730 1080M1870 0L1870 1080M1920 50H4.28372e-05M1920 190H3.67176e-05M1920 330H3.0598e-05M1920 470H2.44784e-05M1920 610H1.83588e-05M1920 750H1.22392e-05M1920 890H6.11959e-06M1920 1030H0" stroke="white" stroke-opacity="0.15" stroke-width="2"/>
+                <path d="M190 40V60M200 50L180 50" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M462.93 322.929L477.072 337.071M477.072 322.929L462.93 337.071" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M750 320V340M760 330L740 330" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M750 600V620M760 610L740 610" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M470 600V620M480 610L460 610" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M190 600V620M200 610L180 610" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M190 320V340M200 330L180 330" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M470 40V60M480 50L460 50" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M750 40V60M760 50L740 50" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1030 40V60M1040 50L1020 50" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1310 320V340M1320 330L1300 330" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1582.93 322.929L1597.07 337.071M1597.07 322.929L1582.93 337.071" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1590 600V620M1600 610L1580 610" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1310 600V620M1320 610L1300 610" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1030 600V620M1040 610L1020 610" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1022.93 322.929L1037.07 337.071M1037.07 322.929L1022.93 337.071" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1310 40V60M1320 50L1300 50" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1590 40V60M1600 50L1580 50" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1870 320V340M1880 330L1860 330" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1870 600V620M1880 610L1860 610" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M750 880V900M760 890L740 890" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M462.93 882.929L477.072 897.071M477.072 882.929L462.93 897.071" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M190 880V900M200 890L180 890" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1582.93 882.929L1597.07 897.071M1597.07 882.929L1582.93 897.071" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1310 880V900M1320 890L1300 890" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1022.93 882.929L1037.07 897.071M1037.07 882.929L1022.93 897.071" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1870 880V900M1880 890L1860 890" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+                <path d="M1870 40V60M1880 50L1860 50" stroke="white" stroke-opacity="0.45" stroke-width="2"/>
+            </g>
+        </svg>            
+    </div>
+    
+    <div class="content">
+        <div class="section-content">
+            <div class="menu-mobile cnt">
+                <ul class="main-mobile cnt">
+                    <li><button class="button-main-mobile cnt hover-active" id="bt-m">Main</button></li>
+                    <li><button class="button-main-mobile cnt" id="bt-m-1">HODL</button></li>
+                    <li><button class="button-main-mobile cnt" id="bt-m-2">DayTrading</button></li>
+                    <li><button class="button-main-mobile cnt" id="bt-m-3">Staking</button></li>
+                    <li><button class="button-main-mobile cnt" id="bt-m-4">Arbitrage</button></li>
+                    <li><button class="button-main-mobile cnt" id="bt-m-5">Futures</button></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="button-lng-mobile" data-translate-key="buttonLng">Language</button>
+                    <div class="dropdown-content-mobile">
+                        <a data-lang="en">English</a>
+                        <a data-lang="ru">Русский</a>
+                    </div>                          
+                </div>
+            </div>
+            <header class="navigation">
+                <a class="button-logo wdt-reg" id="bt-m">
+                    <img src="img/buttonLogo.svg" alt="OpenVision" id="bt-m">
+                </a>
+                <ul class="main cnt">
+                    <li><button class="button-main cnt hover-active" id="bt-m">Main</button></li>
+                    <li><button class="button-main cnt" id="bt-m-1">HODL</button></li>
+                    <li><button class="button-main cnt" id="bt-m-2">DayTrading</button></li>
+                    <li><button class="button-main cnt" id="bt-m-3">Staking</button></li>
+                    <li><button class="button-main cnt" id="bt-m-4">Arbitrage</button></li>
+                    <li><button class="button-main cnt" id="bt-m-5">Futures</button></li>
+                </ul>
+                <div class="button-right wdt-reg">
+                    <div class="dropdown">
+                        <button class="button-lng" data-translate-key="buttonLng">Language</button>
+                        <div class="dropdown-content">
+                            <a data-lang="en">English</a>
+                            <a data-lang="ru">Русский</a>
+                        </div>                          
+                    </div>
+                </div>
+                
+                
+                <button class="button-hamburger wdt-reg">
+                    <ul class="lines cnt">
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </button>
+            </header>
+            <div class="main-content cnt">
+                <h1 class="title" data-translate-key="title">M<span>a</span>st<span>e</span>r<span>i</span>ng th<span>e</span> cr<span>y</span>pt<span>o</span> <span>u</span>n<span>i</span>v<span>e</span>rs<span>e</span></h1>
+                <p class="subtitle" data-translate-key="subtitle">Your gateway to crypto mastery and financial liberty</p>
+                <div class="scroll-line">
+                    <div class="scroll-cargo"></div>
+                </div>                
+                <p class="scroll-info" data-translate-key="scrollInfo">Scroll down</p>
+            </div>
+        </div>
+        <div class="section-hold">
+            <div class="second-content">
+                <div class="cnt-nav-empty"></div>
+                <div class="cnt-properties">
+                    <div class="cnt-background cnt">
+                        <div class="div-top-corners"></div>
+                        <div class="div-bottom-corners"></div>
+                        <h1 class="text-background">HODL</h1>
+                        <div class="grid-container">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                    </div>
+                    <div class="cnt-options">
+                        <div class="amt-cnt cnt">
+                            <div class="amt-box cnt">
+                                <p class="amt-text h-color" data-translate-key="amtText1">Difficulty of Learning</p>
+                                <div class="amt-line hl-color">
+                                    <div class="amt-cargo-1" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text h-color" data-translate-key="amtText2">Duration of Mastery</p>
+                                <div class="amt-line hl-color">
+                                    <div class="amt-cargo-2" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text h-color" data-translate-key="amtText3">Effectiveness</p>
+                                <div class="amt-line hl-color">
+                                    <div class="amt-cargo-3" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inf-cnt cnt">
+                            <div class="inf-box">
+                                <p class="inf-text" data-translate-key="infTextH">This section embodies the concept of holding cryptocurrency assets amidst market instability, emphasizing the strategic importance of patience and a long-term perspective in investments. Instead of succumbing to fear triggered by market fluctuations, "HODL" offers an alternative approach: a conscious decision to retain assets based on faith in their future value, despite temporary difficulties. This is not merely an investment method but a philosophy that advocates for wisdom and confidence in the face of uncertainty, educating investors on the value of measured decisions and long-term planning.</p>
+                            </div>
+                        </div>
+                        <a class="learn-btn cnt" href="./hodl.html">
+                            <img src="img/bluePixels.svg" alt="learn" class="learn-img">
+                            <p class="learn-text" data-translate-key="learnText">Learn</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-dayTrading">
+            <div class="third-content">
+                <div class="cnt-nav-empty"></div>
+                <div class="cnt-properties">
+                    <div class="cnt-background cnt">
+                        <div class="div-top-corners"></div>
+                        <div class="div-bottom-corners"></div>
+                        <h1 class="text-background">Day Trading</h1>
+                        <div class="grid-container">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                    </div>
+                    <div class="cnt-options">
+                        <div class="amt-cnt cnt">
+                            <div class="amt-box cnt">
+                                <p class="amt-text dt-color" data-translate-key="amtText1">Difficulty of Learning</p>
+                                <div class="amt-line dtl-color">
+                                    <div class="amt-cargo-1" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text dt-color" data-translate-key="amtText2">Duration of Mastery</p>
+                                <div class="amt-line dtl-color">
+                                    <div class="amt-cargo-2" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text dt-color" data-translate-key="amtText3">Effectiveness</p>
+                                <div class="amt-line dtl-color">
+                                    <div class="amt-cargo-3" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inf-cnt cnt">
+                            <div class="inf-box">
+                                <p class="inf-text" data-translate-key="infTextDT">This section reflects the high-energy and strategic nature of day trading, where each session presents a new rhythm and opportunity for the trader. Like a dancer accurately following the music, a day trader must be able to read market signals and swiftly adapt to changes, utilizing complex analysis tools and risk strategies to execute their trades. The title underscores the need for flexibility, quick decision-making, and meticulous planning in this dynamic environment, where success requires both an intuitive understanding of the market and strict discipline.</p>
+                            </div>
+                        </div>
+                        <a class="learn-btn cnt" href="./dayTrading.html">
+                            <img src="img/bluePixels.svg" alt="learn" class="learn-img">
+                            <p class="learn-text" data-translate-key="learnText">Learn</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-staking">
+            <div class="fourth-content">
+                <div class="cnt-nav-empty"></div>
+                <div class="cnt-properties">
+                    <div class="cnt-background cnt">
+                        <div class="div-top-corners"></div>
+                        <div class="div-bottom-corners"></div>
+                        <h1 class="text-background">Staking</h1>
+                        <div class="grid-container">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                    </div>
+                    <div class="cnt-options">
+                        <div class="amt-cnt cnt">
+                            <div class="amt-box cnt">
+                                <p class="amt-text s-color" data-translate-key="amtText1">Difficulty of Learning</p>
+                                <div class="amt-line sl-color">
+                                    <div class="amt-cargo-1" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text s-color" data-translate-key="amtText2">Duration of Mastery</p>
+                                <div class="amt-line sl-color">
+                                    <div class="amt-cargo-2" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text s-color" data-translate-key="amtText3">Effectiveness</p>
+                                <div class="amt-line sl-color">
+                                    <div class="amt-cargo-3" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inf-cnt cnt">
+                            <div class="inf-box">
+                                <p class="inf-text" data-translate-key="infTextS">In this section, staking is presented not just as a method of earning passive income but as a deep involvement in supporting and developing blockchain networks. Participating in staking allows cryptocurrency owners to not only strengthen the security and stability of the network through consensus mechanisms but also to receive rewards for their contribution. This title highlights staking as an active choice, aimed at supporting innovative technologies while simultaneously increasing one's own assets, demonstrating how individual financial goals can harmoniously align with the collective objectives of the crypto ecosystem's development.</p>
+                            </div>
+                        </div>
+                        <a class="learn-btn cnt" href="./staking.html">
+                            <img src="img/bluePixels.svg" alt="learn" class="learn-img">
+                            <p class="learn-text" data-translate-key="learnText">Learn</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-arbitrage">
+            <div class="fifth-content">
+                <div class="cnt-nav-empty"></div>
+                <div class="cnt-properties">
+                    <div class="cnt-background cnt">
+                        <div class="div-top-corners"></div>
+                        <div class="div-bottom-corners"></div>
+                        <h1 class="text-background">Arbitrage</h1>
+                        <div class="grid-container">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                    </div>
+                    <div class="cnt-options">
+                        <div class="amt-cnt cnt">
+                            <div class="amt-box cnt">
+                                <p class="amt-text a-color" data-translate-key="amtText1">Difficulty of Learning</p>
+                                <div class="amt-line al-color">
+                                    <div class="amt-cargo-1" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text a-color" data-translate-key="amtText2">Duration of Mastery</p>
+                                <div class="amt-line al-color">
+                                    <div class="amt-cargo-2" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text a-color" data-translate-key="amtText3">Effectiveness</p>
+                                <div class="amt-line al-color">
+                                    <div class="amt-cargo-3" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inf-cnt cnt">
+                            <div class="inf-box">
+                                <p class="inf-text" data-translate-key="infTextA">The "Arbitrage: Navigator of Market Discrepancies" section considers arbitrage as a refined strategy that allows investors to profit from price discrepancies across different markets. This method requires the trader to not only have a high level of awareness of numerous markets but also the ability to act quickly to exploit temporal pricing gaps. Arbitrage represents a unique combination of analytical insight and operational efficiency, demanding a deep understanding of both the technical aspects of trading and macroeconomic trends, making it not only a means of earning but also a test of a trader’s professionalism.</p>
+                            </div>
+                        </div>
+                        <a class="learn-btn cnt" href="./arbitrage.html">
+                            <img src="img/bluePixels.svg" alt="learn" class="learn-img">
+                            <p class="learn-text" data-translate-key="learnText">Learn</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-futures">
+            <div class="sixth-content">
+                <div class="cnt-nav-empty"></div>
+                <div class="cnt-properties">
+                    <div class="cnt-background cnt">
+                        <div class="div-top-corners"></div>
+                        <div class="div-bottom-corners"></div>
+                        <h1 class="text-background">Futures</h1>
+                        <div class="grid-container">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                          </div>
+                    </div>
+                    <div class="cnt-options">
+                        <div class="amt-cnt cnt">
+                            <div class="amt-box cnt">
+                                <p class="amt-text f-color" data-translate-key="amtText1">Difficulty of Learning</p>
+                                <div class="amt-line fl-color">
+                                    <div class="amt-cargo-1" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text f-color" data-translate-key="amtText2">Duration of Mastery</p>
+                                <div class="amt-line fl-color">
+                                    <div class="amt-cargo-2" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="amt-box cnt">
+                                <p class="amt-text f-color" data-translate-key="amtText3">Effectiveness</p>
+                                <div class="amt-line fl-color">
+                                    <div class="amt-cargo-3" style="width: 55%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inf-cnt cnt">
+                            <div class="inf-box">
+                                <p class="inf-text" data-translate-key="infTextF">This section emphasizes futures contracts as a tool that allows investors and traders to interact with the future price movement of assets, providing a unique opportunity for hedging and speculation. It opens the perspective for planning financial strategies considering expected market changes, offering market participants the chance to protect themselves from potential losses or, conversely, to profit from anticipated price fluctuations. Futures play a critical role in the financial world, providing liquidity and opportunities for diversifying investment portfolios, making them an essential tool for both individual investors and large financial institutions.</p>
+                            </div>
+                        </div>
+                        <a class="learn-btn cnt" href="./futures.html">
+                            <img src="img/bluePixels.svg" alt="learn" class="learn-img">
+                            <p class="learn-text" data-translate-key="learnText">Learn</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="sound-container cnt">
+        <ul class="sound cnt">
+            <li class="line"></li>
+            <li></li>
+            <li></li>
+            <audio class="audio" autoplay>
+                <source src="audio/noteMain.wav" type="audio/mpeg">
+            </audio>
+        </ul>
+    </button>
+    <div class="data-info">2024 OpenVision beta v0.0.4.0</div>
+
+    <script type="module" src="./js/app.js"></script>
+    <script src="./js/show.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/selected-language.js"></script>
+</body>
+</html>
