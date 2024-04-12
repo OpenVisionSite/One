@@ -1,4 +1,3 @@
-
 class Visualization {
     constructor() {
         this.container = document.querySelector('.scroll-container');
