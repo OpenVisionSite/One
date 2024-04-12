@@ -1,3 +1,6 @@
+// В JavaScript файле, который использует Three.js
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three/build/three.module.js';
+
 class Visualization {
     constructor() {
         this.container = document.querySelector('.scroll-container');
